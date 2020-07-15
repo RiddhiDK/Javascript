@@ -1,0 +1,56 @@
+Question 3: Write a brief intro on available data types in javascript.
+
+Answer: A value in JavaScript is always of a certain type. It can be a string or a number, etc.
+
+        There are 8 basic data types in javascript.
+        1]      Number:
+                    It represents both integer and floating point numbers.
+                    There are some special numeric values which are part of this data type and they are : Infinity and NaN.
+                    Infinity represents the mathematical infinity , which is a special value greater than any other value. 
+                    NaN represents a computational error. It is a result of an incorrect or an undefined mathematical operation.
+            
+        2]      BigInt:
+                    In JavaScript, the 'number' type cannot represent integer values larger than (2^53-1) (that’s 9007199254740991), or less than -(-2^53-1) for negatives. It’s a technical limitation caused by their internal representation.
+                    BigInt type was recently added to the language to represent integers of arbitrary length.
+                    A BigInt value is created by appending n to the end of an integer:
+                    ex: const bigInt = 900719925474099178383675n;
+
+        3]      String:
+                    A string in JavaScript must be surrounded by quotes.
+                    In javascript there are 3 types of quotes:
+                    i> Single Quotes: 'Hello'
+                    ii> Double Quotes: "Hello"
+                    iii> Backticks: `Hello`
+                    Double and single quotes are 'simple' quotes. There’s practically no difference between them in JavaScript.
+                    Backticks are 'extended functionality' quotes. They allow us to embed variables and expressions into a string by wrapping them in ${…}
+                    The expression inside ${…} is evaluated and the result becomes a part of the string. We can put anything in there: a variable like name or an arithmetical expression like 1 + 2 or something more complex.
+
+        4]      Boolean:
+                    The boolean type has only two values: true and false.
+                    This type is commonly used to store yes/no values: true means ''yes, correct', and false means 'no, incorrect'.
+                    Boolean values also come as a result of comparision.
+
+        5]      null:
+                    The special null value does not belong to any of the types described above.
+                    It forms a separate type of its own which contains only the null value.
+                    In JavaScript, null is not a 'reference to a non-existing object' or a 'null pointer' like in some other languages.
+                    It’s just a special value which represents 'nothing', 'empty' or 'value unknown'.
+
+        6]      undefined:
+                    The special value undefined also stands apart. It makes a type of its own, just like null.
+                    The meaning of undefined is 'value is not assigned'.
+                    If the variable is declared but not assigned then its values in undefined.
+
+        7]      Objects and symbols:
+                    The object type is special. 
+                    All other types are called 'primitive' because their values can contain only a single thing.
+                    In contrast, objects are used to store collections of data and more complex entities.
+                    The symbol type is used to create unique identifiers for objects.
+                
+        8]      Typeof Operator:
+                    The typeof operator returns the type of the argument. It’s useful when we want to process values of different types differently or just want to do a quick check.
+                    There are two formats for syntax:
+                    i> As an operator: typeof x;
+                    ii> As a function: typeof(x);
+
+                    In both these cases, the result is same. In short, it works with both parenthesis and without parenthesis.

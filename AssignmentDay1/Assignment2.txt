@@ -1,0 +1,32 @@
+Question 2: Write the difference between var, let and const with code examples.
+
+Answer:
+1]      var:
+            var is used for variable declaration in javascript. 
+            var is function scoped or globally scoped.
+            var variables can be updated or re-declared within its scope. 
+        Example: var a = 8;
+                 document.write(a);
+
+                 Here we are calling the variable 'a' after it is declared, it is globally accessible throuout the program. As we have declared it with var, we can change the value of 'a' in the program.
+
+2]      let:
+            let is also used for variable declaration in javascript.
+            let is block scoped. That means it is accessible only the block where it is declared or written.
+            let variables can be updated but not re-declared.
+        Example: {
+                    let b = 10;
+                    document.write(b);
+                 }
+                 // some code trying to access the value of b
+
+                 Here, this code will get an error, as the variable 'b' is defined inside the block and the code outside the block is trying to access the value of b. The variable is declared within the block and it is declared with 'let' keyword. As let is block scoped, the value of 'b' cannot be accessed outside the particular code block.
+
+3]      const:
+            const is another variable declaration technique in javascript.
+            Declaring a variable with const is similar to let when it comes to Block Scope.
+            const variables can neither be updated nor re-declared.
+            const variables must be assigned a value when they are declared.
+        Example: const PI = 3.14;       //correct way to declare the const variables.
+            If you have declared it globally, it will behave like globally scoped.
+            If it is declared within a code block it will behave like block scoped.

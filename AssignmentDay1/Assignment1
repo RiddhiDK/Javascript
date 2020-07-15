@@ -1,0 +1,31 @@
+Question 1: Explore and explain the various methods in console function ex: console.log() , console.warn(), etc.
+
+Answer: 
+1]      The console.log() is used to write a message to the console.
+        
+        Syntax: console.log(message);
+
+        It is mandatory to pass the argument to the function. Whatever message we want to print on the console, we can specify it in the argument to the log function and it will get printed when the program is executed.
+
+        The argument passed to this function can be of any type like an array, an object or any message.
+        This function returns the value of the parameter given. 
+
+        Example: <script>
+                    var pri = "This is an exmaple for console.log()";
+                    console.log(pri);
+                 </script>
+
+            Here, this example will print the value assigned to the pri variable.
+
+2]      The console.warn() is used to write the warnings to the console.
+
+        Syntax: console.warn(message);
+
+        It is mandatory to pass the argument to the function. Lets say, user is trying to close the window and the page has some unsaved changes. We want to show a warning message to the user before taking the 'Close' action on the page. In this situation, the console.warn() comes handy.
+
+        Example: <script>
+                    <!-- Some code and button with Close window action -->
+                    console.warn("You are about to close the window. There are some unsaved changes on the page. Please make sure to save the changes before closing the window.")
+                 </script>
+
+

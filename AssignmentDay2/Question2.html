@@ -1,0 +1,85 @@
+<!-- Explain with examples the remaining methods of string and array -->
+
+<html>
+    <head>
+        <title>String and array examples</title>
+    </head>
+    <body>
+        <h3>String Methods</h3>
+        <h4><b>1. Length:</b></h4>
+        <p>The length Property returns the length of the string.</p>Example:
+        <script>
+            var str1 = "The quick brown fox jumps over the lazy dog";
+            var lenstr = str1.length;
+
+            document.write("The given string is = " + str1 +" </br>");
+            document.write("The length of the string is = " + lenstr);
+        </script>
+
+        <h4><b>2. indexOf():</b></h4>
+        <p>The indexOf() method returns the position of the first occurrence of a specified text in a string. indexOf() calculates the position from 0. It returns -1 if the string is not found.</p>Example:
+        <script>
+            var str2 = "This is batch 1 for Javascript by Letsupgrade and I'm loving it.";
+            var pos = str2.indexOf("for");
+
+            document.write("The given string is : " + str2 + " </br>");
+            document.write("We are trying to find the position of 'for' in the given string and it is : " + pos);
+        </script>
+
+        <h4><b>3. lastIndexOf():</b></h4>
+        <p>The lastIndexOf() method returns the position of the last occurrence of a specified text in a string. lastIndexOf() methods searches backwards i.e. from the end to the beginning.</p>Example:
+        <script>
+            var str3 = "This is batch 1 for Javascript by Letsupgrade and I'm loving it.";
+            var pos1 = str3.lastIndexOf("in", 2);
+            document.write("The given string is : " + str3 + " </br>");
+            document.write("We are trying to find the position of 'in' in the given string and it is : " + pos1);
+        </script>
+
+        <h4><b>4. search():</b></h4>
+        <p>The search() method searches a string for a specified value and returns the position of the match</p>Example:
+        <script>
+            var str4 = "This is batch 1 for Javascript by Letsupgrade and I'm loving it.";
+            var pos2 = str4.search("Letsupgrade");
+            document.write("The given string is : " + str4 + " </br>");
+            document.write("We are trying to find the position of 'in' in the given string and it is : " + pos2);
+        </script>
+        <h3>===============================================================================================================</h3>
+
+        <h3>Array Methods</h3>
+
+        <h4><b>1. toString():</b></h4>
+        <p>The JavaScript method toString() converts an array to a string of (comma separated) array values.</p>Example:
+        <script>
+            var colors = ["Red","Yellow","Green","Blue","Black","White"];
+            document.write("Given array is : [\"Red\",\"Yellow\",\"Green\",\"Blue\",\"Black\",\"White\"]");
+            document.write("</br>The converted string is = " + colors.toString() +" </br>");
+        </script>
+
+        <h4><b>2. join():</b></h4>
+        <p>The join() method also joins all array elements into a string. It behaves just like toString(), but in addition you can specify the separator. Here we will separate the array elements with " ** ".</p>Example:
+        <script>
+            var shades = ["Red","Yellow","Green","Blue","Black","White"];
+            document.write("Given array is : [\"Red\",\"Yellow\",\"Green\",\"Blue\",\"Black\",\"White\"]");
+            document.write("</br>The converted string is = " + shades.join(" ** ") +" </br>");
+        </script>
+
+        <h4><b>3. pop():</b></h4>
+        <p>The pop() method removes the last element from an array. And it returns the value that was popped out.</p>Example:
+        <script>
+            var shadespop = ["Red","Yellow","Green","Blue","Black","White"];
+            document.write("Given array is : [\"Red\",\"Yellow\",\"Green\",\"Blue\",\"Black\",\"White\"]");
+            var x = shadespop.pop();
+            document.write("</br>The popped value is = " + x +" </br>");
+        </script>
+
+        <h4><b>4. push():</b></h4>
+        <p>The push() method adds the new element to an array. And it returns the new array length. The new added element will always be added at the end. push() methods takes an argument.</p>Example:
+        <script>
+            var shadespush = ["Red","Yellow","Green","Blue","Black"];
+            document.write("Given array is : [\"Red\",\"Yellow\",\"Green\",\"Blue\",\"Black\"]");
+            var y = shadespush.push("Orange");
+            document.write("</br>The New array length is = " + y +" </br>");
+            document.write("</br>New array is : " + shadespush);
+        </script>
+    </body>
+</html>

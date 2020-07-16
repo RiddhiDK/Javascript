@@ -1,0 +1,23 @@
+<!-- Ask the user if he is 21+ and log the value "can drink", "cannot drink" -->
+
+<html>
+    <head>
+        <title>User is allowed to drink or not</title>
+    </head>
+    <body>
+        <script>
+            var nameAndAge = window.prompt("Enter your name , age");
+            name = nameAndAge.split(",")[0];
+            age = nameAndAge.split(",")[1];
+
+            if(age >= 21)
+            {
+                alert("Hi " + name + ", you are allowed to drink");
+            }            
+            else
+            {
+                alert("Hi " + name + ", you are not allowed to drink");
+            }
+        </script>
+    </body>
+</html>

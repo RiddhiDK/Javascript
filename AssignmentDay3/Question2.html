@@ -1,0 +1,18 @@
+<!-- Write a program which will take OS name and version from the user separated by a space. Then log the OS name and version on the console.
+Input : "Android 9"
+Output: The OS name is Android and version is 9 -->
+
+<html>
+    <head>
+        <title>OS Name and Version Program</title>
+    </head>
+    <body>
+        <script>
+            var OsVersion = window.prompt("Please enter the OS name and the version.");
+            var OSName = OsVersion.split(" ",[0]);
+            var Version = OsVersion.split(" ",[1]);
+
+            console.log("The OS Name is : " + OSName + " and Version is : " + Version);
+        </script>
+    </body>
+</html>

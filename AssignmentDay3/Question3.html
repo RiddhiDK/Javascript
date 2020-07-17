@@ -1,0 +1,47 @@
+<!-- Write a program to take marks as input from user and grade him accordingly. Use conditional statements. Also the same code using switch or ternary. 
+Input : 50
+Output: Marks are 50 and grade is B.-->
+
+<html>
+    <head>
+        <title>Marks and Grades</title>
+    </head>
+    <body>
+        <script>
+            var marks = window.prompt("Enter your marks");
+            
+            var OpeSystem = window.prompt("How would you like the grading system to work?(Please specify from the given choices: switch or ternary");
+
+            if(OpeSystem == "switch")
+            {
+                var switchgrade = gradeSystemswitch(marks);
+            }
+            else
+            {
+                 var ternarygrade = gradeSystem(marks);
+            }
+
+            function gradeSystemswitch(marks)
+            {
+                switch(true)
+                {
+                    case marks>=75:
+                    document.write("Marks are : " + marks + " and grade is A");
+                    break;
+                    
+                    case marks<75:
+                    document.write("Marks are : " + marks + " and grade is B");
+                    break;
+
+                    default:
+                    document.write("Please enter valid marks");
+                }
+            }
+
+            function gradeSystem (marks)
+            {
+                marks>=51 ? document.write("Marks are : " + marks + " and grade is A") : document.write("Marks are : " + marks + " and grade is B");
+            }
+        </script>
+    </body>
+</html>

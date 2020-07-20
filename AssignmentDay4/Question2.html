@@ -1,0 +1,31 @@
+<!-- Destructure the following code
+const student = {
+    name: "Helsinki",
+    age: 24,
+    projects: {
+        diceGame: "Two player dice game using Javascript"
+    }
+} 
+-->
+
+<html>
+    <head>
+        <title>Destructure the code</title>
+    </head>
+    <body>
+        <script>
+            const student = {
+                name: "Helsinki",
+                age: 24,
+                projects: {
+                    diceGame: "Two player dice game using Javascript"
+                }
+            } 
+            document.write("The given object is: " + "</br>const student = { </br>&nbsp&nbsp&nbsp&nbsp name: \"Helsinki\",</br>&nbsp&nbsp&nbsp&nbsp age: 24,</br>&nbsp&nbsp&nbsp&nbsp projects: {</br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp diceGame: \"Two player dice game using Javascript\"</br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp }</br>}");
+            document.write("</br></br></br>Destructuring the given object:");
+
+            const {name, age} = student;
+            document.write("</br>Name : " + name + "</br>Age : " + age );
+        </script>
+    </body>
+</html>

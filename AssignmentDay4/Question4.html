@@ -1,0 +1,118 @@
+<!-- Make a calculator in Javascript which can do operations as addition, Subtraction, Multiplication, Division, Square root, Percentage. -->
+
+<html>
+    <head>
+        <title>Calculator Program</title>
+    </head>
+    <body>
+        <div class="Calc">Javascript Calculator</div>
+        <table border="1">
+            <tr>
+                <td><input type="button" value="C" onclick="clear()"/></td>
+                <td><input type="button" id="clswin" value="Close Calc" onclick="clswindow()"/></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="txtone" placeholder="Enter first number"/></td>
+                <td><input type="button" value="+" onclick="add()"/></td>
+                <td><input type="button" value="/" onclick="divide()"/></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="txttwo" placeholder="Enter second number" /></td>
+                <td><input type="button" value="-" onclick="sub()"/></td>
+                <td><input type="button" value="%" onclick="percent()"/></td>
+            </tr>
+            <tr>
+                <td><input type="text" value="===============" readonly="true" disabled="true"></td>
+                <td><input type="button" value="*" onclick="multi()"/></td>
+                <td><input type="button" value="sqrt" onclick="sqroot()"/></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="result" readonly="true"/></td>
+            </tr>
+        </table>
+        <script>    
+        document.body.style.backgroundColor = "pink";
+            function add()
+            {
+                var x = parseInt(document.getElementById("txtone").value);
+                var y = parseInt(document.getElementById("txttwo").value);
+                var z = x + y;
+                document.getElementById("result").value = z;
+            }
+            function sub()
+            {
+                var x = parseInt(document.getElementById("txtone").value);
+                var y = parseInt(document.getElementById("txttwo").value);
+                var z = x - y;
+                document.getElementById("result").value = z;
+            }
+            function multi()
+            {
+                var x = parseInt(document.getElementById("txtone").value);
+                var y = parseInt(document.getElementById("txttwo").value);
+                var z = x * y;
+                document.getElementById("result").value = z;
+            }
+            function divide()
+            {
+                var x = parseInt(document.getElementById("txtone").value);
+                var y = parseInt(document.getElementById("txttwo").value);
+                var z = x / y;
+                document.getElementById("result").value = z;
+            }
+            function percent()
+            {
+                var x = parseFloat(document.getElementById("txtone").value);
+                var y = parseFloat(document.getElementById("txttwo").value);
+                if (x > y)
+                {
+                    window.alert("First value should be smaller than the second value");
+                }
+                else
+                {
+                    var z = (x / y)*100;
+                    document.getElementById("result").value = z;
+                }
+            }
+            function sqroot()
+            {
+                var x = parseInt(document.getElementById("txtone").value);
+                var y = parseInt(document.getElementById("txttwo").value);
+                var z = Math.sqrt(x);
+                var w = Math.sqrt(y);
+                document.getElementById("result").value = z + ", " + w;
+            }
+            function clswindow()
+            {
+                window.close();
+            }
+        </script>
+        <style>
+            .Calc{
+                border-radius: 10px;
+                margin-bottom: 10px;
+                text-align: center;
+                width: 300px;
+                color:rgb(107, 2, 2);
+                border: solid black 3px;
+                background-color: yellow;
+                }
+                input[type="button"]
+                {
+                    border-radius: 10px;
+                    background-color:yellow;
+                    color: black;
+                    border-color:#8D8741 ;
+                    width:100%;
+                }
+                input[type="text"]
+                {
+                border-radius: 10px;
+                text-align: center;
+                background-color:lightgreen;
+                border-color: black ;
+                width:100%
+                }
+        </style>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+<!-- Imagine you are going out to do some grocery shopping.
+So you have a array called shoppingList with all the products yo want to buy.
+Now that you are inside the shop, you have a basket with all the products from your list, but you want to add few more.
+Create a new array called shoppingBasket, that will be a copy of shopping list array , and add some new products into it. -->
+
+<html>
+    <head>
+        <title>Copy array and add new elements to new copy.</title>
+    </head>
+    <body>
+        <script>
+            var shoppingList = ["Milk", "Bread", "Cheese", "Cream", "Biscuits"];
+            var shoppingBasket = Array.from(shoppingList);
+            shoppingBasket.push("Fruits","Snacks");
+            var elements =  shoppingBasket.toString();
+            document.write(elements);
+        </script>
+    </body>
+</html>

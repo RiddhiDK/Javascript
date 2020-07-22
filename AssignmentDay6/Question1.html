@@ -1,0 +1,25 @@
+<!-- Write a program that will iterate over an array of colors and change the background of the page after 5 seconds. -->
+
+<html>
+    <head>
+        <title>Iterate over the colors after 5 seconds</title>
+    </head>
+    <body id="background">
+        <script>
+            var i = 0;
+            function changeColor()
+            {
+                var doc = document.getElementById("background");
+                var color = ["#33FF9C","#33FFD1","#45D7D9","#BA45D9"]
+                doc.style.backgroundColor=color[i];
+                i++;
+
+                if(i > color.length - 1)
+                {
+                    i = 0;
+                }
+            }
+            setInterval(changeColor,5000);
+        </script>
+    </body>
+</html>

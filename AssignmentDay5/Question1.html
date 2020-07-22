@@ -1,0 +1,30 @@
+<!-- Write a program which does the following things:
+    1. Takes a positive number from the user.
+    2. Makes an array of numbers till the number given by user.
+    3. Use higher order function to filter the odd numbers.
+    4. Generate and array of the cubes of the filtered numbers.
+-->
+
+<html>
+    <head>
+        <title>Question 1</title>
+    </head>
+    <body>
+        <script>
+            var num = Math.abs(window.prompt("Enter a number"));
+            document.write("The number entered by user : "+num);
+            
+            var newArray = Array.from(Array(num).keys());
+            document.write("</br>Array of numbers till the number given by user: " + newArray);
+
+            var oddNums = Array.from(newArray.filter((ele) => ele % 2 == 1));
+            document.write("</br>The odd number Array is : " + oddNums);
+
+            for (var i = 0; i < oddNums.length; i++)
+            {
+                oddNums[i] = oddNums[i]*oddNums[i]*oddNums[i];
+            }
+            document.write("</br>The cubes of the filtered numbers are: " + oddNums);
+        </script>
+    </body>
+</html>

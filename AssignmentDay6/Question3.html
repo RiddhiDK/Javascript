@@ -1,0 +1,38 @@
+<!-- Make a webpage that will ask the name of the user. Then will display a welcome message on the webpage. Also the webpage should also have a clock. Using the toggle method of classList add a dark mode feature to the website. -->
+
+<html>
+    <head>
+        <style>
+            body 
+            {
+                padding: 25px;
+                background-color: white;
+                color: black;
+                font-size: 25px;
+            }
+            .dark-mode 
+            {
+                background-color: black;
+                color: white;
+            }
+        </style>
+    </head>
+    <script>
+        function toggleColor() 
+        {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+        
+        var name = window.prompt("Please enter your name: ");
+        document.write("Welcome " + name + "! Hope you are doing well!");
+    </script>
+    <body>
+            <table border="5px">
+                <tr>
+                    <td>Click the button to toggle the mode.==> </td>
+                    <td><button onclick="toggleColor()">Toggle dark mode</button></td>
+                </tr>
+            </table>
+    </body>
+</html>

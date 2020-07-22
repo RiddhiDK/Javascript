@@ -1,0 +1,61 @@
+<!-- Create a Class User with properties as name, age & email.
+    He can login and logout.Create another class Moderator which has all the features of User, plus additional functionality to Addcoins and remove coins.
+    Create one more class Admin which has all the features of Moderator plus additional features like add a Course and delete a particular course for a user. -->
+
+<html>
+    <head>
+        <title>Classes and properties</title>
+    </head>
+    <body>
+        <script>
+            class User{
+                constructor(name, age, email,coins,course){
+                    this.name = name;
+                    this.age = age;
+                    this.email = email;
+                    this.coins = 0;
+                    this.course = course;
+                }
+
+                login(){
+                    console.log(`${this.name} has logged in`);
+                }
+                logout(){
+                    console.log(`${this.name} has logged out`);
+                }
+            }
+            
+            class Moderator extends User{
+                addCoins(user,coins)
+                {
+                    this.coins = coins++;
+                    console.log(coins + " coins have been added");
+                }
+                removeCoins(user,coins)
+                {
+                    this.coins = coins--;
+                    console.log(coins + " coins have been removed");
+                }
+            }
+
+            class Admin extends Moderator{
+                addCourse(user,course)
+                {
+                    this.course = course;
+                    console.log(this.course + " has been added");
+                }
+                removeCourse(user,course)
+                {
+                    this.course = "";
+                    console.log(course + " has been removed");
+                }
+            }
+            var user = new User("Riddhi",26,"riddhi12345@gmail.com");
+            var mod = new Moderator();
+            var adm = new Admin();
+            user.login();
+            mod.addCoins(user,300);
+            adm.addCourse(user,"JavaScript");
+        </script>
+    </body>
+</html>

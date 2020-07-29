@@ -1,0 +1,26 @@
+body
+{
+    background-image: url('backgroundQuoteGenerator.jpg');
+}
+h1
+{
+    color: aqua;
+    text-align: center;
+    font-style: italic;
+}
+.genQuote
+{
+    color: rgb(226, 142, 15);
+    text-align: center;
+    font-style: italic;
+}
+.buttonQuote
+{
+    text-align: center;
+}
+button
+{
+    font-style: italic;
+    width: fit-content;
+    background-color: springgreen;
+}
